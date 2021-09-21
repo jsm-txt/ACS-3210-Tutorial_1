@@ -5,7 +5,7 @@ const Pet = require('../models/pet');
 module.exports = (app) => {// UPLOADING TO AWS S3
   const multer  = require('multer');
   const upload = multer({ dest: 'uploads/' });
-  const upload = require('s3-uploader');
+  const Upload = require('s3-uploader');
   const client = new Upload(process.env.S3_BUCKET, {
     aws: {
       path: 'pets/avatar',
