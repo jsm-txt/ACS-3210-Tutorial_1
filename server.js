@@ -13,6 +13,9 @@ const methodOverride = require('method-override')
 
 const app = express();
 
+
+
+//mongoose
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/local', {
   useNewUrlParser: true,
